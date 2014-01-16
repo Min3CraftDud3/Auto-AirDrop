@@ -1,0 +1,63 @@
+# Auto AirDrop Config File
+# - - - - - - - - - - - - -
+
+# Auto AirDrop state when server start or reload . Enable In-Game with the command: [/ad on]
+Enabled: true
+# In what world do you want the AirDrops. [world_nether] is not allowed.
+World: world
+# Delay in minutes between each AirDrop.
+# MINIMUM: 1 minute | Integer only Ex.:(10,56) is not allowed.
+Delay: 10
+# Delete the AirDrops when it is Empty.
+Auto Delete: false
+# The way the AirDrop are dropped on the world.
+AirDrop Mode:
+  # Enable if you want AirDrop to be randomly dropped in a random selected Area (Need to Disable "Locations" mode)
+  Areas:
+    Enabled: true
+    # The AirDrop Area randomly choose between these Area choices.
+    # Disable the Areas you don't desire in the automatic selection.
+    Area 1:
+      Enabled: true
+      # Determine the Area. Maximum can't be lower or equal to minimum.
+      Minimum X: 500
+      Maximum X: 700
+      Minimum Z: 100
+      Maximum Z: 300
+        
+    # You can add more Areas but only change the ID [Area ID] Area 2, Area 3, Area 4, and so on...
+    # ****************************************************************************************
+    # ** IDs must be ASCENDING AND DO NOT SKIP an ID otherwise the Areas will not be usable **
+    # ****************************************************************************************
+      
+  # Enable if you want AirDrop to be dropped in a random selected location (Need to Disable "Areas" mode)
+  Locations:
+    Enabled: false
+    # The AirDrop locations randomly choose between these location choices.
+    # Disable the Locations you don't desire in the automatic selection.
+    Location 1:
+      Enabled: true
+      # Coordinates [X, Z]
+      Coordinates: 100, 67
+        
+    # You can add more locations but only change the ID [Location ID] Location 2, Location 3, Location 4, and so on...
+    # ********************************************************************************************
+    # ** IDs must be ASCENDING AND DO NOT SKIP an ID otherwise the locations will not be usable **
+    # ********************************************************************************************
+  
+# Package of Items in the AirDrop 
+Packages:
+  # The AirDrop Items Package randomly choose between these Package choices.
+  # Disable the Packages you don't desire in the automatic selection.
+  # Link for all Items ID: http://www.minecraftinfo.com/idlist.htm
+  PKG 1:
+    Enabled: true
+    # [ItemId-Amount,ItemId-Amount,ItemId-Amount,...] *Don't put espaces*
+    # ItemId like [123:3] are not allowed.
+    Items: 306-1,307-1,308-1,309-1,267-1
+      
+  # You can add more Packages but only change the ID [PKG ID] PKG 2, PKG 3, PKG 4 and so on...
+  # *******************************************************************************************
+  # ** IDs must be ASCENDING AND DO NOT SKIP an ID otherwise the Packages will not be usable **
+  # *******************************************************************************************
+

@@ -1,0 +1,16 @@
+name: Auto AirDrop
+main: me.Vedronex.AAD.AutoAirDrop
+author: Min3CraftDud3 - Vedronex
+version: 1.2
+commands:
+  ad:
+    description: AirDrop main command
+    aliases: [airdrop]
+    usage: /<command> <args>
+permissions:
+  ad.admin:
+    description: Allow the player to Enable, Disable automatic airdrops and Reset the config file.
+    default: op
+  ad.force:
+    description: Force an Airdrop without waiting for the delay and even the automatic airdrops is disabled.
+    default: op
